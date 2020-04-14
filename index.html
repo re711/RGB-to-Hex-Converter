@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>RGB to Hex Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h1>RGB</h1>
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-1 col-form-label">R:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputR">
+                            </div>
+                            <span class="item-r"></span>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-1 col-form-label">G:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputG">
+                            </div>
+                            <span class="item-g"></span>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-1 col-form-label">B:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputB">
+                            </div>
+                            <span class="item-b"></span>
+                    </div>
+                    <div class="btn btn-primary" id="convertBtn">Convert</div>
+                </form>
+            </div>
+            <div class="col-4">
+                <h1>HEX</h1>
+                <input type="text" class="form-control" value id="result">
+                <div class="item-show" id="color"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
